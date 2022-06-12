@@ -7,7 +7,7 @@ const app = express();
 
 // Routes
 app.get('/', (req, res) => {
-
+    console.log('The server was accessed.')
 });
 
 app.listen(3000);
