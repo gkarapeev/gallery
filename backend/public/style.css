@@ -17,16 +17,22 @@ html, body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    width: 900px;
+    height: calc(100vh - 60px);
+    overflow: scroll;
     padding: 20px;
     background-color: #e6e6e6;
 }
 
 .card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 200px;
     width: 200px;
     background-color: #808080;
+}
+
+.card img {
+    width: 80%;
 }
