@@ -10,17 +10,21 @@ html, body {
 
 #container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    background-color: #e6e6e6;
 }
 
 #content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    height: calc(100vh - 60px);
-    overflow: scroll;
-    padding: 20px;
-    background-color: #e6e6e6;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
 }
 
 .card {
